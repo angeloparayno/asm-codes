@@ -1,32 +1,33 @@
-;PARAYNO, JOHN ANGELO DC.
-;PADILLA, CRISZELLE
-;2ITAw
+;John Angelo Parayno
 
 .model small
 .stack 64
 .data
-		;PRIMARY TABLE OUTPUT
-		a db 10,13,"--------------------------------------------------------------------$"
-        b db 10,13,"|                     Angelo's Vegetable Store                     |$"
-        c db 10,13,"|     -----            -----            -----            -----     |$"
-        d db 10,13,"|    |  9  |          |  9  |          |  9  |          |  9  |    |$"
-        e db 10,13,"|     -----            -----            -----            -----     |$"
-        f db 10,13,"|   [A]Asparagus     [B]Broccoli       [G]Garlic         [O]Okra   |$"
-        g db 10,13,"|------------------------------------------------------------------|$"
-        h db 10,13,"|            What kind of vegetable do you want to buy?            |$"
-        i db 10,13,"|       what?[_]          qty? [_]        buy again:(y/n) [_]      |$"
-        j db 10,13,"--------------------------------------------------------------------$"
-		;SECONDARY TABLE OUTPUT
-		k db 10,13,"|                 Invalid Input, Please try again!                 |$"
-		l db 10,13,"|                   How many do you want to buy? 	               |$"
-		m db 10,13,"|                 Not Enough Stack, Please Try Again               |$"
-		n db 10,13,"|   There're no more Stack, Do you like to buy other vegetables    |$"
-		o db 10,13,"|    Thank you for dropping by our store, Please come again!!      |$"	
-		;VARIABLES
-		as db 39h
-		br db 39h
-		ga db 39h
-		ok db 39h
+
+;PRIMARY TABLE OUTPUT
+a db 10,13,"--------------------------------------------------------------------$"
+b db 10,13,"|                     Angelo's Vegetable Store                     |$"
+c db 10,13,"|     -----            -----            -----            -----     |$"
+d db 10,13,"|    |  9  |          |  9  |          |  9  |          |  9  |    |$"
+e db 10,13,"|     -----            -----            -----            -----     |$"
+f db 10,13,"|   [A]Asparagus     [B]Broccoli       [G]Garlic         [O]Okra   |$"
+g db 10,13,"|------------------------------------------------------------------|$"
+h db 10,13,"|            What kind of vegetable do you want to buy?            |$"
+i db 10,13,"|       what?[_]          qty? [_]        buy again:(y/n) [_]      |$"
+j db 10,13,"--------------------------------------------------------------------$"
+		
+;SECONDARY TABLE OUTPUT
+k db 10,13,"|                 Invalid Input, Please try again!                 |$"
+l db 10,13,"|                   How many do you want to buy? 	               |$"
+m db 10,13,"|                 Not Enough Stack, Please Try Again               |$"
+n db 10,13,"|   There're no more Stack, Do you like to buy other vegetables    |$"
+o db 10,13,"|    Thank you for dropping by our store, Please come again!!      |$"	
+		
+;VARIABLES
+as db 39h
+br db 39h
+ga db 39h
+ok db 39h
 
 .386
 .code
